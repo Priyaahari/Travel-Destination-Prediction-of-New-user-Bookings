@@ -49,11 +49,7 @@ Step 2: Run Classifiers_by_split.R
 #svm_accuracy. 
 #Similarly, the accuracies obtained by other algorithms can be seen in the output.
 
-*************************************************************************************************************
 
-For a detailed analysis of the output please refer to Report.pdf
-
-*************************************************************************************************************
 
 
 
