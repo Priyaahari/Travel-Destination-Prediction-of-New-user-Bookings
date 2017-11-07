@@ -6,10 +6,6 @@ Project ReadMe.txt file
 
 04.30.2017
 
-Ashwath Santhanam axs161730
-Haripriyaa U Manian hum160030
-Preethi Sekar pxs163930
-
 *************************************************************************************************************
 
 Dataset - Inside the Preprocessed-Dataset folder we have the dataset file named airbnb_dataset.csv
