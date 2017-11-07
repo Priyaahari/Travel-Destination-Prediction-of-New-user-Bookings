@@ -1,0 +1,96 @@
+Prediction of Travel Destination of New User Bookings- AirBnb Data Set 
+
+**********************************Description:*****************************
+    Collected the data from the airbnb data set that contains detailed information about the list of
+users and the different factors that led them to book their first travel destination, which we
+describe in detail in the next section. We apply some of the Machine Learning algorithms like
+Decision Trees, Neural Networks, Naive Bayes Classifier, SVM etc. to this dataset to predict the
+travel destination of the new user.
+--------------------------------------------------------------------------------------
+
+***********************************ALGORITHMS USED**************************
+
+Decision Trees
+DTs use training instances to build a sequence of evaluations which can be used to permit the
+correct category (prediction). This algorithm hence can be used to identify the countries from
+which prominent number of users would be booking tickets upfront. Best attribute that can be
+used to split the attribute set is done based on information gain, which can be calculated based on
+Shannon's entropy.
+
+Neural Networks
+Artificial neural networks are relatively crude electronic networks of neurons based on the neural
+structure of the brain. They process records one at a time, and learn by comparing their
+classification of the record with the known actual classification of the record. The errors from the
+initial classification of the first record is fed back into the network, and used to modify the
+networks algorithm for further iterations.
+
+Naïve Bayes Classifier
+We use Bayes probabilities to determine the most likely next event for the given instance for all
+the training data. Conditional probabilities are determined from the training data. Based on those
+values, classification would be done.
+
+Support Vector Machines
+Given a set of training examples, each marked for belonging to one of two categories, an SVM
+training algorithm builds a model that assigns new examples into one category or the other,
+making it a non-probabilistic binary linear classifier. An SVM model is a representation of the
+examples as points in space, mapped so that the examples of the separate categories are divided
+by a clear gap that is as wide as possible. New examples are then mapped into that same space
+and predicted to belong to a category based on which side of the gap they fall on.
+
+Bagging
+It is a method which generates multiple versions of predictor by bootstrap samples and using
+them to get an aggregated predictor. The aggregation averages over the versions when predicting
+a numerical outcome and does a plurality vote when predicting a class.
+
+Boosting
+The weight of all training samples would assigned equally. Then training on the model is done.
+Based on the error calculated in the iteration, we would increase the weights of incorrectly
+classified data. This process would be repeated until accurate prediction of weights is done for
+the model. Boosting are of two types: Ada Boosting and Gradient Boosting. Both algorithms are
+implemented in our system.
+k-NN algorithm was not used for implementation as the dataset had lot of non-numerical values.
+Hence finding a nearest neighbor is complicated.
+
+
+*****************************************EXPERIMENTAL METHODOLOGY********************************************8
+
+Predictive Modelling:
+It encompasses a variety of techniques from machine learning that analyze current and historical
+facts to make predictions about future or otherwise unknown events.
+
+Classifiers_by_Cross_Validation.R
+  Cross-validation is a technique to evaluate predictive models by partitioning the original sample
+into a training set to train the model, and a test set to evaluate it. In k-fold cross-validation, the
+original sample is randomly partitioned into k equal size subsamples. We are performing a 3-
+fold cross validation (k=3). We first take the Training Data from airbnb and pre-process it. We are making sure that the
+attribute(country_destination) to be predicted is a factor type.
+We then find the Accuracy and Kappa Statistic for all the major Machine Learning Algorithms
+
+Accuracy:
+The Accuracy factor is defined as, Overall, how often is the classifier correct.
+Kappa statistic:
+This is essentially a measure of how well the classifier performed as compared to how well it
+would have performed simply by chance. In other words, a model will have a high Kappa score
+if there is a big difference between the accuracy and the null error rate.
+
+Classifiers by Split:
+  Here we split the data - 80% for training and 20% for testing to find the accuracy using various
+algorithms and also plot the results accordingly. Along with the accuracies we also determine the
+confusion matrices for each of the algorithms. A confusion matrix is a table that is often used to
+describe the performance of a classification model (or "classifier") on a set of test data for which
+the true values are known.
+Confusion Matrix
+A confusion matrix is a table that is often used to describe the performance of a classification
+model (or "classifier") on a set of test data for which the true values are known
+
+
+
+**********************************RESULTS************************************************************
+
+Upon execution of various Machine Learning algorithms to the Airbnb dataset, we can see that
+the classifier selection depends largely on the data. In addition to that, data has multiple
+classification attributes for the predicting the right destination. Overall, the usage of ensemble
+methods - Bagging and Boosting, would be the ideal choice for this particular data. However, the
+time taken for execution of the ensemble methods, is large. The order of total time taken for
+training the datasets were - Neural Networks, Support Vector machines, Decision Tree,
+Perceptron and Ensemble methods. But it was in the reverse order for testing the dataset.
