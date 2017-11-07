@@ -10,26 +10,26 @@ travel destination of the new user.
 
 ***********************************ALGORITHMS USED**************************
 
-Decision Trees
+Decision Trees:
 DTs use training instances to build a sequence of evaluations which can be used to permit the
 correct category (prediction). This algorithm hence can be used to identify the countries from
 which prominent number of users would be booking tickets upfront. Best attribute that can be
 used to split the attribute set is done based on information gain, which can be calculated based on
 Shannon's entropy.
 
-Neural Networks
+Neural Networks:
 Artificial neural networks are relatively crude electronic networks of neurons based on the neural
 structure of the brain. They process records one at a time, and learn by comparing their
 classification of the record with the known actual classification of the record. The errors from the
 initial classification of the first record is fed back into the network, and used to modify the
 networks algorithm for further iterations.
 
-Naïve Bayes Classifier
+Naïve Bayes Classifier:
 We use Bayes probabilities to determine the most likely next event for the given instance for all
 the training data. Conditional probabilities are determined from the training data. Based on those
 values, classification would be done.
 
-Support Vector Machines
+Support Vector Machines:
 Given a set of training examples, each marked for belonging to one of two categories, an SVM
 training algorithm builds a model that assigns new examples into one category or the other,
 making it a non-probabilistic binary linear classifier. An SVM model is a representation of the
@@ -37,12 +37,12 @@ examples as points in space, mapped so that the examples of the separate categor
 by a clear gap that is as wide as possible. New examples are then mapped into that same space
 and predicted to belong to a category based on which side of the gap they fall on.
 
-Bagging
+Bagging:
 It is a method which generates multiple versions of predictor by bootstrap samples and using
 them to get an aggregated predictor. The aggregation averages over the versions when predicting
 a numerical outcome and does a plurality vote when predicting a class.
 
-Boosting
+Boosting:
 The weight of all training samples would assigned equally. Then training on the model is done.
 Based on the error calculated in the iteration, we would increase the weights of incorrectly
 classified data. This process would be repeated until accurate prediction of weights is done for
